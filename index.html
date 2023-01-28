@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/reset.css" rel="stylesheet" type="text/css">
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">    
+    <title>Encriptador de Texto</title>
+</head>
+<body>
+    <header><img src="imagenes/logo.png" alt="Logo Alura - Encriptador"></header>
+    <section>
+        <h2>TEXTO</h2>
+        <textarea class="textoInicial" name="" id="" cols="30" rows="10" placeholder="Texto a Encriptar o Desencriptar"></textarea>
+        <h3>Solo letras minúsculas y sin acentos</h3>
+    </section>
+    <section>
+        <button class="btnEncriptar" onclick="btnEncriptar()">ENCRIPTAR</button>
+        <button class="btnDesencriptar" onclick="btnDesencriptar()">DESENCRIPTAR</button>
+        <button class="btnCopiar" onclick="btnCopy()">COPIAR</button>
+    </section>
+    <section>
+        <h2>ENCRIPTADO/DESENCRIPTADO</h2>
+        <textarea class="textoResultado" name="" id="" cols="30" rows="10" placeholder="Resultado de la Encriptación / Desencriptación"></textarea>
+    </section>
+    <script src="scripts/script.js"></script>
+</body>
+</html>

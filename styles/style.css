@@ -1,0 +1,142 @@
+html{
+    height:100%;
+    font-family: "Inter";
+}
+html,textarea,button{
+    font-family: "Inter";
+    color: white;
+}
+
+body{
+    width: 940px;
+    height: 100%;
+    margin: 0 auto;
+    color: white;
+    background: linear-gradient(70deg, blue,Aqua);
+}
+header{
+    margin: 0 auto;
+    padding: 50px 0;
+    text-align: center;
+}
+header img{
+    opacity:0.75;
+}
+
+section{
+    display: inline-block;
+    width: 33%;
+    vertical-align: top;
+}
+h2{
+    width: 100%;
+    padding: 20px;
+    margin: 20px 0;
+    box-sizing: border-box;
+    text-align: center;  
+    border-radius: 5px;  
+    background-color: rgba(255, 255, 255, 0.5);
+    text-shadow: #ADADAD 1px 2px;
+}
+h3{
+    font-size: 14px;
+    margin-top: 5px;
+    color: white;
+}
+h3:before{
+    content: "ⓘ ";
+}
+textarea{
+    width: 90%;
+    height: 250px;
+    border-radius: 5px;
+    border: none;
+    resize: none;
+    padding: 5%;
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: background-color 0.75s;
+}
+textarea:focus{
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.75);
+    color: gray;
+}
+button{
+    width: 200px;
+    display: block;
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 20px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: background-color 0.5s;
+}
+button:hover{
+    background-color: rgba(255, 255, 255,0.75);
+    color: gray;
+}
+button:active{
+    background-color: rgba(0, 0, 0, 0.75);
+}
+button.btnEncriptar{
+    background-image: url(../imagenes/open.png);
+    background-repeat: no-repeat;
+    background-position: 10% 50%;
+    margin-top: 97px;
+}
+button.btnDesencriptar{
+    background-image: url(../imagenes/close.png);
+    background-repeat: no-repeat;
+    background-position: 10% 50%;
+}
+button.btnCopiar{
+    background-image: url(../imagenes/copy.png);
+    background-repeat: no-repeat;
+    background-position: 10% 50%;
+    margin-top: 97px;
+    visibility: hidden;
+}
+
+/*CSS MOBILE*/
+
+@media screen and (max-width: 1024px) {
+    body{
+        width: 100%;
+        background-color: red;
+    }
+    section{
+        width: 90%;
+        margin: 0 5%;
+    }
+    textarea{
+        height: 100px;
+    }
+    button{
+        display: inline-block;
+        width: 26%;
+        margin: 0 3%;
+    }
+    button.btnEncriptar, button.btnCopiar{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body{
+        background-color: gray;
+    }
+    section{
+        width: 90%;
+        margin: 0 5%;
+    }
+    button{
+        display: block;
+        width: 50%;
+        margin: 5% auto;
+    }
+    button.btnEncriptar, button.btnCopiar{
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+}
